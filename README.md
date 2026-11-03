@@ -1,6 +1,6 @@
 # Coronary Artery Disease Prediction
 
-[![CI](https://github.com/haadijafari/Heart-Attack/actions/workflows/ci.yml/badge.svg)](https://github.com/haadijafari/Heart-Attack/actions/workflows/ci.yml)
+[![CI](https://github.com/haadijafari/Coronary-Artery-Disease-Prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/haadijafari/Coronary-Artery-Disease-Prediction/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.12%2B-2a78d6)
 ![License](https://img.shields.io/badge/license-MIT-2a78d6)
 
@@ -93,8 +93,8 @@ uv run streamlit run app/streamlit_app.py
 The project uses [uv](https://docs.astral.sh/uv/) and Python 3.12 or newer (3.14 is pinned for development).
 
 ```bash
-git clone https://github.com/haadijafari/Heart-Attack.git
-cd Heart-Attack
+git clone https://github.com/haadijafari/Coronary-Artery-Disease-Prediction.git
+cd Coronary-Artery-Disease-Prediction
 uv sync                                       # create .venv with all dependencies
 uv run pytest                                 # run the test suite
 uv run heart-train                            # retrain; writes models/model.joblib and models/metrics.json

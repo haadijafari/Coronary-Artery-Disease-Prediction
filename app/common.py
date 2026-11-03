@@ -23,7 +23,7 @@ DISCLAIMER = (
     "for angiography in the 1980s and must not be used to make decisions about anyone's health."
 )
 
-REPOSITORY_URL = "https://github.com/haadijafari/Heart-Attack"
+REPOSITORY_URL = "https://github.com/haadijafari/Coronary-Artery-Disease-Prediction"
 
 
 @st.cache_resource
