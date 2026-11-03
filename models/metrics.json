@@ -1,0 +1,122 @@
+{
+  "selected_model": "Logistic regression",
+  "target_recall": 0.9,
+  "cross_validation": {
+    "scheme": "nested, 5x repeated stratified 5-fold",
+    "metric": "roc_auc",
+    "summary": [
+      {
+        "model": "SVM (RBF kernel)",
+        "mean": 0.91,
+        "std": 0.0344,
+        "se": 0.0069
+      },
+      {
+        "model": "Logistic regression",
+        "mean": 0.9088,
+        "std": 0.0375,
+        "se": 0.0075
+      },
+      {
+        "model": "Random forest",
+        "mean": 0.9083,
+        "std": 0.0364,
+        "se": 0.0073
+      },
+      {
+        "model": "Gradient boosting",
+        "mean": 0.9026,
+        "std": 0.0423,
+        "se": 0.0085
+      },
+      {
+        "model": "Baseline",
+        "mean": 0.5,
+        "std": 0.0,
+        "se": 0.0
+      }
+    ]
+  },
+  "test": {
+    "n_patients": 61,
+    "n_disease": 28,
+    "threshold": 0.3082,
+    "params": {
+      "C": 0.1
+    },
+    "metrics": [
+      {
+        "metric": "roc_auc",
+        "estimate": 0.9361,
+        "lower": 0.8723,
+        "upper": 0.9848
+      },
+      {
+        "metric": "average_precision",
+        "estimate": 0.9194,
+        "lower": 0.8369,
+        "upper": 0.9841
+      },
+      {
+        "metric": "brier",
+        "estimate": 0.1102,
+        "lower": 0.0747,
+        "upper": 0.1492
+      },
+      {
+        "metric": "sensitivity",
+        "estimate": 0.9643,
+        "lower": 0.8929,
+        "upper": 1.0
+      },
+      {
+        "metric": "specificity",
+        "estimate": 0.697,
+        "lower": 0.5455,
+        "upper": 0.8485
+      },
+      {
+        "metric": "precision",
+        "estimate": 0.7297,
+        "lower": 0.6364,
+        "upper": 0.8485
+      },
+      {
+        "metric": "npv",
+        "estimate": 0.9583,
+        "lower": 0.8696,
+        "upper": 1.0
+      },
+      {
+        "metric": "accuracy",
+        "estimate": 0.8197,
+        "lower": 0.7213,
+        "upper": 0.9016
+      },
+      {
+        "metric": "balanced_accuracy",
+        "estimate": 0.8306,
+        "lower": 0.7424,
+        "upper": 0.9091
+      },
+      {
+        "metric": "f1",
+        "estimate": 0.8308,
+        "lower": 0.7576,
+        "upper": 0.9032
+      }
+    ]
+  },
+  "deployed": {
+    "n_patients": 302,
+    "threshold": 0.297,
+    "params": {
+      "C": 0.1
+    }
+  },
+  "versions": {
+    "heart-disease": "0.1.0",
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1"
+  }
+}
