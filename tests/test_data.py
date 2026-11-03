@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from heart_disease.data import DataValidationError, clean, load_dataset
+from heart_disease.data import DataValidationError, clean
 
 # First row of data/raw/heart.csv, in the raw Kaggle encoding.
 BASE_ROW = {
@@ -138,11 +138,6 @@ class TestValidation:
     def test_target_outside_zero_and_one_is_rejected(self):
         with pytest.raises(DataValidationError, match="output"):
             clean(make_raw({"output": 2}))
-
-
-@pytest.fixture(scope="module")
-def dataset():
-    return load_dataset()
 
 
 class TestRealDataset:
